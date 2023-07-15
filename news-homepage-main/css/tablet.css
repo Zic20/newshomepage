@@ -1,0 +1,48 @@
+body {
+    padding: 30px 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+
+.content_container {
+    flex-direction: column;
+}
+
+
+.showcase {
+    padding: 0;
+}
+
+.showcase .showcase-text {
+    flex-direction: column;
+}
+
+.showcase .showcase-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.showcase .showcase-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.news {
+    margin-bottom: 30px;
+}
+
+.trending {
+    flex-direction: column;
+}
+
+.trending .item {
+    width: 100%;
+    margin-bottom: 10px;
+}

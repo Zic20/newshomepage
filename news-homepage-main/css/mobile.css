@@ -1,0 +1,94 @@
+body {
+    padding: 30px 20px;
+}
+
+.btn {
+    padding: 15px 25px;
+    font-size: 1rem;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 35%;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    z-index: 2;
+}
+
+
+.navbar ul li {
+    margin-bottom: 30px;
+}
+
+.navbar ul li.toggle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#navOpen {
+    display: block;
+}
+
+.navbar ul li a {
+    color: var(--very-dark-blue);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.content_container {
+    flex-direction: column;
+}
+
+
+.showcase {
+    padding: 0;
+}
+
+#img-desktop {
+    display: none;
+}
+
+#img-mobile {
+    display: block;
+}
+
+.showcase .showcase-text {
+    flex-direction: column;
+}
+
+.showcase .showcase-text h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+.showcase .showcase-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.news {
+    margin-bottom: 30px;
+}
+
+.trending {
+    flex-direction: column;
+}
+
+.trending .item {
+    width: 100%;
+    margin-bottom: 10px;
+}
