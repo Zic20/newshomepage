@@ -29,17 +29,17 @@
         <img src="./assets/images/icon-menu-close.svg" alt="">
       </li>
       <li><a class="link" href="#">Home</a></li>
-      <li><a class="link" href="#">New</a></li>
-      <li><a class="link" href="#">Popular</a></li>
-      <li><a class="link" href="#">Trending</a></li>
-      <li><a class="link" href="#">Categories</a></li>
+      <li><a class="link" href="#new">New</a></li>
+      <li><a class="link" href="#new">Popular</a></li>
+      <li><a class="link" href="#trending">Trending</a></li>
+      <li><a class="link" href="#trending">Categories</a></li>
     </ul>
     <img id="navOpen" src="./assets/images/icon-menu.svg" alt="">
 </nav>
 
 <div class="content_container">
 
-  <section class="showcase">
+  <section id="showcase">
     <div class="showcase_img">
       &nbsp;
       <img loading="lazy" id="img-mobile" src="./assets/images/image-web-3-mobile.jpg" alt="illustration-editor-desktop">
@@ -52,7 +52,7 @@
         <a class="btn" href="#">READ MORE</a>
       </div>
   </section>
-  <aside class="news">
+  <aside id="new">
     <h2>New</h2>
     <ul>
     
@@ -79,7 +79,7 @@
 
 
 
-<section class="trending">
+<section id="trending">
   <div class="item">
     <img src="./assets/images/image-retro-pcs.jpg" alt="illustration-editor-desktop">
     <div>
@@ -128,14 +128,17 @@
 
     navOpen.addEventListener('click', () => {
       navLinks.style.display = 'flex'
+      document.body.style.overflow = 'hidden'
     });
     navClose.addEventListener('click', () => {
       navLinks.style.display = 'none'
+      document.body.style.overflow = 'auto'
     });
 
     document.getElementById('nav-links').addEventListener('click', (event) => {
      if(event.target.classList.contains('link') ){
       navLinks.style.display = 'none'
+      document.body.style.overflow = 'auto'
      }
     });
   </script>

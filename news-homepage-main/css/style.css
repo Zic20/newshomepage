@@ -38,6 +38,7 @@ body {
     font-size: 15px;
     color: #777;
     padding: 50px 80px;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -50,6 +51,7 @@ body {
 .navbar ul {
     display: flex;
     list-style: none;
+    transition: all .3s ease-in-out;
 }
 
 .navbar ul li {
@@ -84,7 +86,7 @@ body {
     align-items: flex-start;
 }
 
-.showcase {
+#showcase {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,7 +95,7 @@ body {
     padding-right: 30px;
 }
 
-.showcase .showcase_img {
+#showcase .showcase_img {
     margin-bottom: 30px;
 }
 
@@ -133,51 +135,51 @@ body {
     margin-bottom: 10px;
 }
 
-.news {
+#new {
     width: 100%;
     background: var(--very-dark-blue);
     padding: 30px;
 }
 
-.news h2 {
+#new h2 {
     font-size: 2rem;
     font-weight: 800;
     color: var(--soft-orange);
     margin-bottom: 30px;
 }
 
-.news ul {
+#new ul {
     list-style: none;
 }
 
-.news ul li {
+#new ul li {
     margin-bottom: 30px;
 }
 
-.news ul li:not(:last-child) {
+#new ul li:not(:last-child) {
     border-bottom: 1px solid var(--grayish-blue);
     padding-bottom: 30px;
 }
 
-.news ul li h3 {
+#new ul li h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.news ul li h3:hover {
+#new ul li h3:hover {
     color: var(--soft-orange);
 }
 
-.news ul li p {
+#new ul li p {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--grayish-blue);
     margin-bottom: 10px;
 }
 
-.trending {
+#trending {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -185,7 +187,7 @@ body {
     margin-bottom: 30px;
 }
 
-.trending .item {
+#trending .item {
     display: flex;
     width: 32%;
     height: 150px;
@@ -193,25 +195,25 @@ body {
     margin: 30px 0;
 }
 
-.trending .item img {
+#trending .item img {
     width: 30%;
     height: 100%;
 }
 
-.trending .item div {
+#trending .item div {
     width: 70%;
     height: 100%;
     padding: 0 10px;
 
 }
 
-.trending .item div span {
+#trending .item div span {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--grayish-blue);
 }
 
-.trending .item div h3 {
+#trending .item div h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--very-dark-blue);
@@ -219,11 +221,11 @@ body {
     margin-top: 10px;
 }
 
-.trending .item div h3:hover {
+#trending .item div h3:hover {
     color: var(--soft-red);
 }
 
-.trending .item div p {
+#trending .item div p {
     font-size: 1rem;
     line-height: 1.8;
     color: var(--dark-grayish-blue);

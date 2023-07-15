@@ -13,36 +13,36 @@ body {
 }
 
 
-.showcase {
+#showcase {
     padding: 0;
 }
 
-.showcase .showcase-text {
+#showcase .showcase-text {
     flex-direction: column;
 }
 
-.showcase .showcase-text h1 {
+#showcase .showcase-text h1 {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 20px;
     line-height: 1;
 }
 
-.showcase .showcase-text p {
+#showcase .showcase-text p {
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
-.news {
+#new {
     margin-bottom: 30px;
 }
 
-.trending {
+#trending {
     flex-direction: column;
 }
 
-.trending .item {
+#trending .item {
     width: 100%;
     margin-bottom: 10px;
 }
